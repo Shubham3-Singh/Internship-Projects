@@ -1,0 +1,390 @@
+.content {
+  .cartUpdate {
+    display: flex;
+    width: 79%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+    @media screen and(max-width: 769px) {
+      flex-direction: column;
+      width: 100%;
+      padding: 0px 50px;
+      line-height: 2;
+    }
+    .update1 {
+      width: 25%;
+
+      @media screen and(max-width: 769px) {
+        width: 100%;
+      }
+    }
+    #progressbar {
+      width: 56%;
+      .update2 {
+        display: flex;
+        justify-content: space-evenly;
+        
+  
+        @media screen and(max-width: 769px) {
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+    }
+
+  }
+
+  .mainArea {
+    display: flex;
+    padding: 0 50px;
+
+    @media screen and(max-width: 919px) {
+      flex-direction: column;
+    }
+    .left {
+      width: 60%;
+
+      @media screen and(max-width: 919px) {
+        width: 100%;
+      }
+      .delivery {
+        margin: 30px 0px;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and(max-width: 919px) {
+        flex-direction: row;
+        justify-content: space-between;
+        }
+
+        @media screen and(max-width: 645px) {
+         flex-direction: column; 
+        }
+        .deliveryTop {
+          margin-bottom: 30px;
+          .aChange {
+            margin-left: 50px;
+          }
+        }
+        .deliveryBottom {
+          span {
+            padding: 20px 75px 20px 20px;
+
+            @media screen and(max-width: 645px) {
+              display: flex;
+              align-items: center;
+
+              .aChange {
+                padding-right: 20px;
+              }
+            }
+          }
+        }
+      }
+      .side1 {
+        .productDetail {
+          display: flex;
+          align-items: center;
+
+          @media screen and(max-width: 919px) {
+            flex-direction: column;
+          }
+          .productList {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            @media screen and(max-width: 919px) {
+              padding: 0px 25px;
+              margin: 15px 0px;
+            }
+
+            @media screen and(max-width: 518px) {
+              flex-direction: column;
+            }
+            ul {
+              li {
+                padding-bottom: 10px;
+
+                select {
+                  border: none;
+                }
+
+                .select1 {
+                  margin-right: 17px;
+                }
+
+                .quantity {
+                  margin-left: 20px;
+                }
+
+                span {
+                  padding-right: 10px;
+
+                  label {
+
+                    @media screen and(max-width: 919px) {
+                      font-size: 25px;
+                    }
+                  }
+                  select {
+
+                    @media screen and(max-width: 919px) {
+                      font-size: 25px;
+                    }
+
+                    option {
+
+                      @media screen and(max-width: 919px) {
+                        font-size: 20px;
+                      }
+                    }
+                  }
+                }
+
+                .borderBetween {
+                  border-right: 2px solid $lightGrey;
+                  
+                }
+                .delete {
+                  text-decoration: line-through;
+                }
+
+              }
+            }
+            .userIcon {
+              display: flex;
+              width: 10%;
+              justify-content: space-around;
+
+              @media screen and(max-width: 919px) {
+                width: 20%;
+              }
+
+              li {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+      .offer {
+        display: flex;
+        margin-top: 30px;
+
+        @media screen and(max-width: 919px) {
+         margin-bottom: 30px;   
+        }
+
+        @media screen and(max-width: 645px) {
+          flex-direction: column;  
+        } 
+        .available {
+          display: flex;
+          width: 50%;
+          margin-right: 30px;
+          padding: 15px 20px;
+          align-items: center;
+          
+          ul {
+            li {
+              margin-bottom: 10px;
+            }
+          }
+
+          @media screen and(max-width: 645px) {
+            width: 100%;
+            margin-bottom: 30px;
+          }
+          .alist {
+            padding-left: 30px; 
+          }
+        }
+        .gifting {
+          display: flex;
+          width: 50%;
+          padding: 15px 20px;
+          align-items: center;
+          
+          ul {
+            li {
+              margin-bottom: 10px;
+            }
+          }
+
+          @media screen and(max-width: 645px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .right {
+      width: 30%;
+      margin-left: 10%;
+
+      @media screen and (max-width: 1215px) {
+        width: 100%;
+        margin-left: 0%;
+      }
+      .coupon {
+        display: flex;
+        align-items: flex-start;
+        padding: 33px;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+
+        @media screen and(max-width:  440px) {
+          flex-direction: column;
+        }
+        .couponImage {
+          margin-top: 18px;
+
+          @media screen and(max-width: 440px) {
+            margin-bottom: 10px;
+          }
+        }
+        .couponList {
+
+          @media screen and(max-width: 440px) {
+            margin-bottom: 10px;
+          }
+          
+          .list1 {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .removeMain {
+        display: none;
+        margin-bottom: 30px;
+        .remove {
+          align-items: flex-start;
+          display: flex;
+          padding: 33px;
+          justify-content: space-between;
+        }
+      }
+      .orderMain {
+        .orderSummary {
+          padding: 16px 31px;
+          .summaryList {
+            li {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 25px;
+            }
+            .total {
+              margin-bottom: 25px;
+              padding: 0px 10px;
+              display: flex;
+              align-items: center;
+            }
+          }
+          .checkoutMain {
+            text-align: right;
+            #checkout {
+              padding: 18px 72px;
+              margin-bottom: 10px;
+              border-radius: 7px;
+            }
+          }
+        }
+        .card {
+          margin-top: 40px;
+          .cardOrder {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            li {
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    margin: 100px 0px;
+    .serviceOrder {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 50px 0px;
+
+      @media screen and(max-width: 768px) {
+        flex-direction: column;
+    }
+
+      li {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and(max-width: 768px) {
+          padding: 20px 0px;
+      }
+        span {
+          display: inline-block;
+          padding-top: 20px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  display: none;
+  .modalMain {
+    padding: 0 45px;
+    width: 30%;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .modalLogo {
+      align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0;
+      .logoInfo {
+        margin: 0 auto;
+      }
+    }
+
+    .code {
+      line-height: 2;
+      .codeSelect {
+        .selectedCoupon {
+          border: 2px solid;
+          display: flex;
+          justify-content: space-between;
+          padding: 0px 20px;
+          margin: 15px 0px 60px 0px;
+          border-radius: 4px;
+          .enterCoupon {
+            border: none;
+          }
+        }
+      }
+      .codeOrder {
+        border-bottom: 1px solid #e9e9e9;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        .codeList {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          span {
+            border: 2px dashed green;
+            padding: 10px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}

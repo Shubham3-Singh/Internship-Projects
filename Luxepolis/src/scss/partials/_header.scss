@@ -1,0 +1,139 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+    
+    @media screen and (max-width: 768px) {
+        top: 0px;
+    }
+    .headLine {
+        padding: 10px;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+    
+        @media screen and (max-width: 998px) {
+            flex-direction: column;
+        }
+    
+        ul {
+            display: flex;
+            align-items: center;
+    
+            @media screen and (max-width: 998px) {
+                padding-top: 50px;
+            }
+    
+            @media screen and (max-width: 657px) {
+                flex-direction: column;
+            }
+    
+            .authenticity {
+                padding-right: 10px;
+    
+                @media screen and (max-width: 657px) {
+                    border: $border;
+                }
+            }
+    
+            .helpIcons {
+                a {
+                    display: inline-block;
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+    
+                @media screen and (max-width: 657px) {
+                    margin-left: 0px;
+                }
+            }
+            li {
+                margin-left: 15px;
+                &:first-child {
+                    margin-left: 0px;
+                }
+                .searchIcon {
+                    padding: 3px;
+                    position: absolute;
+                }
+                .search {
+                    width: 230px;
+                    padding-left: 20px;
+                }
+    
+                @media screen and (max-width: 657px) {
+                    padding-bottom: 10px;
+                }
+    
+            }
+        }
+    }
+    .navHam {
+        margin-top: 25px;
+        .navbar {
+            margin: 0px 0px 20px 390px;
+            width: 60%;
+        
+            @media screen and (max-width: 1200px) {
+                display: none;
+                position:absolute;
+                top: 190px;
+                z-index: 3;
+                right: 25px;
+                background-color: black;
+                color: white;
+                padding: 33px;
+                width: 30%;
+                margin: 0px;
+                &.active {
+                display: block;
+                }
+              }
+        
+            .navOrder {
+                display: flex;
+                justify-content: space-between;
+        
+                @media screen and (max-width: 1200px) {
+                    flex-direction: column;
+                }
+                .navList {
+                    .navAnchor {
+                        @media screen and (max-width: 1200px) {
+                            font-size: 30px;
+        
+                            @media screen and (max-width: 998px) {
+                                font-size: 20px;
+                            }
+                        }
+        
+                        
+                    }
+                }
+            }
+        }
+        
+        .hamburger {
+        
+            .ham {
+                width: 39px;
+                height: 5px;
+                margin: 5px 0px;
+            }
+        
+            display: none;
+        
+            @media screen and (max-width: 1200px) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin: 10px 0px;
+            }
+        }
+    }
+}

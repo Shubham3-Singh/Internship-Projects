@@ -1,0 +1,65 @@
+#footer {
+    padding: 40px;
+    .feature--nav {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $grey;
+        .featured-brands {
+            .brands {
+                display: flex;
+                .brandsOrder {
+                    margin-right: 30px;
+                }
+                .brandsOrder2 {
+
+                }
+            }
+        }
+        .featured-catagories {
+            .catagoryOrder {
+
+            }
+        }
+        .general {
+            .generalOrder {
+
+            }
+        }
+        .legal {
+            .legalOrder {
+
+            }
+        }
+        .contact-luxepolis {
+            .contactOrder {
+
+            }
+        }
+        .luxepolis-social {
+            display: flex;
+            flex-direction: column;
+            .lsOrder {
+                display: flex;
+                justify-content: space-between;
+            }
+            .lsOrder2 {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .foot-wrap {
+
+        }
+    }
+    .contactData {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $grey;
+        .contactInfo {
+            width: 35%;
+        }
+        .brandInfo {
+            width: 55%;
+        }
+    }
+}
